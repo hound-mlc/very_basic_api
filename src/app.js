@@ -25,7 +25,7 @@ const todoLangMap= [
       todos: [
         {
           id: 1,
-          text: 'Estudiar Vue'
+          text: 'Estudiar Angular'
         },
         {
           id: 2,
@@ -42,7 +42,7 @@ const todoLangMap= [
       todos: [
         {
           id: 1,
-          text: 'Study SolidJS'
+          text: 'Study Vue'
         },
         {
           id: 2,
@@ -91,7 +91,7 @@ app.get("/api/user/:id", (req, res, next) => {
     }   
 });
 
-app.listen(process.env.PORT || 5000, () => {
+app.listen(process.env.PORT || 3000, () => {
  console.log("Server running on port 3000");
 });
 
