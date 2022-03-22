@@ -70,12 +70,16 @@ const users = [
         id: 2,
         name: 'Paco',
         age: 50
+    },
+    {
+      id: 3,
+        name: 'Santiago',
+        age: 50
     }
 ];
 
 app.get("/api/users", (req, res, next) => {
-  const foundUser = users.find((user) => user.id === +req.params.id)
-  res.status(200).send(users);
+  res.status(200).send(users.slice(0, 2));
 });
 
 app.get("/api/user/:id", (req, res, next) => {
